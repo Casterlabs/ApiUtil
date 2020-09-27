@@ -6,6 +6,6 @@ import lombok.NonNull;
 
 @AllArgsConstructor
 public abstract class AuthenticatedWebRequest<T, A extends AuthProvider> extends WebRequest<T> {
-    private @NonNull A auth;
+    protected @NonNull A auth;
 
 }
