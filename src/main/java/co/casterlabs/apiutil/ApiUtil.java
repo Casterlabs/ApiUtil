@@ -12,7 +12,7 @@ public class ApiUtil {
 
     private static @NonNull @Getter @Setter ErrorReporter errorReporter = new ErrorReporter() {
         @Override
-        public void apiError(@NonNull String url, @Nullable String sentBody, @Nullable Map<String, String> sentHeaders, @Nullable String recBody, @Nullable Map<String, String> recHeaders, @NonNull Throwable t) {}
+        public void apiError(@NonNull String url, @Nullable String sentBody, @Nullable Map<Object, Object> sentHeaders, @Nullable String recBody, @Nullable Map<Object, Object> recHeaders, @NonNull Throwable t) {}
     };
 
 }
